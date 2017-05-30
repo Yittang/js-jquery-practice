@@ -12,16 +12,19 @@ i {
 	font-style: normal;
 	font-weight: 900;
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 10px;
+	right: 30px;
 	line-height: 16px;
 	-webkit-text-stroke-width: 0.2px; /*描边厚度*/
+}
+img {
+	cursor: pointer;
 }
 /*局部样式*/
 .wrap {
 	width: 1226px;
 	height: 460px;
-	margin: 200px auto;
+	margin: 200px auto 0;
 	position: relative;
 }
 .wrap .nav {
@@ -33,13 +36,56 @@ i {
 	z-index: 99;
 }
 .wrap .nav ul {
-	padding: 30px;
+	padding: 30px 0;
 }
 .wrap .nav ul li {
+	display: block;
+	height: 40px;
+	line-height: 40px;
 	list-style: none;
 	font-size: 14px;
-	margin-bottom: 21px;
+	margin-bottom: 2px;
 	position: relative;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.wrap .nav ul li:hover {
+	background: #368;
+	width: 100%;
+}
+.wrap .category-Flist {
+	float: left;
+	width: 795px;
+	height: 410px;
+	position: relative;
+	z-index: 99;
+	background: #fff;
+	padding: 25px;
+	box-shadow: 2px 5px 10px #ccc;
+}
+.wrap .category-Flist ul li{
+	list-style: none;
+	float: left;
+	margin: 0 30px 40px 0;
+	position: relative;
+	width: 230px;
+	font-size: 13px;
+}
+.wrap .category-Flist ul li a {
+	color: #000;
+	position: absolute;
+	top: 12px;
+	left: 60px;
+}
+.wrap .category-Flist ul li span {
+	position: absolute;
+	top: 8px;
+	right: 0;
+	display: block;
+	border: 1px solid #ff6700;
+	color: #ff6700;
+	padding: 2px 15px;
+	cursor: pointer;
 }
 .wrap .banner {
 	width: 100%;
@@ -103,4 +149,8 @@ i {
 	background: #fff;
 	width: 9px;
 	height: 9px;
+}
+/*jquery添加的样式*/
+.none {
+	display: none;
 }

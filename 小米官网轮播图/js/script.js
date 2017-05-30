@@ -61,6 +61,22 @@ function showTime() {
 	},3000);
 }
 
-
+/*菜单选项脚本*/
+var sub = $(".category-Flist");
+var curId = null;
+var sideNav;
+var time;
+$(".nav ul li").hover(function() {
+		curId = $(this).data("id");//取得当前鼠标聚焦的一级菜单li的自定义ID
+		sideNav = $("#"+ curId);
+		sideNav.removeClass("none");
+},function() {
+	sideNav.hover(function() {
+			sideNav.removeClass("none");
+		},function() {
+			sideNav.addClass("none");
+		});
+	sideNav.addClass("none");
+})
 
 
