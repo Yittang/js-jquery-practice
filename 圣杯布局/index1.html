@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圣杯布局</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="col" id="main">
+			<p>圣杯布局是指两边定宽中间自适应的三栏布局，使主要内容先加载其流程为（1）清除浏览器自身默认的margin和padding，设置container的左右padding，用于预留左右边栏的空间（2）给左边栏设置margin-left：-100%，右边栏设置margin-left其自身宽度的负值 （3）给左右两栏设置相对定位，设置left和right，不再遮挡中间栏的部分 </p>
+		</div>
+		<div class="col" id="left">
+			left
+		</div>
+		<div class="col" id="right">
+			right
+		</div>
+	</div>
+</body>
+</html>
