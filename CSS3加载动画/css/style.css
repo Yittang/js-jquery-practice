@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrap {
+	margin: 200px auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.pic1, .pic2, .pic3 {
+	position: relative;
+}
+/*第一个加载动画的样式*/
+.pic1 span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -50px;
+	width: 100px;
+	height: 100px;
+	border: 10px solid rgba(205,205,193,.5);
+	border-left-color: #fff;
+	border-radius: 50%;
+	animation: cartoon 2s linear infinite;
+}
+
+@-webkit-keyframes cartoon {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/*第二个加载动画的样式*/
+.pic2 div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 5px;
+	height: 30px;
+	background: #000;
+}
+
+.line1 {
+	margin: -15px 0 0 -20px;
+	animation: cartoon2 1.5s ease-in infinite;
+}
+.line2 {
+	margin: -15px 0 0 0px;
+	animation: cartoon2 1.5s ease-in .3s infinite;
+}
+.line3 {
+	margin: -15px 0 0 20px;
+	animation: cartoon2 1.5s ease-in .6s infinite;
+}
+
+@-webkit-keyframes cartoon2 {
+	0%,80%,100% {
+		transform: scaleY(.5);
+	}
+	40% {
+		transform: scaleY(1.5);
+	}
+}
+/*第三个加载动画的样式*/
+.pic3 div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	background: #00CD00;
+	border-radius: 50%;
+}
+.cir1 {
+	margin: -15px 0 0 -40px;
+	animation: cartoon3 2s ease-in-out infinite;
+}
+.cir2 {
+	margin: -15px 0 0 0px;
+	animation: cartoon3 2s ease-in-out .3s infinite;
+}
+.cir3 {
+	margin: -15px 0 0 40px;
+	animation: cartoon3 2s ease-in-out .6s infinite;
+}
+
+@-webkit-keyframes cartoon3 {
+	0%,80%,100% {
+		transform: scale(.5);
+		opacity: .2;
+	}
+	40% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
