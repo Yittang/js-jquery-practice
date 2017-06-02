@@ -9,5 +9,5 @@
  1. 用hover事件来实现二级菜单的效果
  2. 用自己定义的data-id来让对应的二级菜单显示
 
-# 在线预览：https://yittang.github.io/practice/小米官网轮播图/index.html
+# 在线预览：https://yittang.github.io/practice/轮播图/index.html
 
