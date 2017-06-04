@@ -6,4 +6,7 @@
 # 解决的一个小问题：
 	1. 因为i标签不设置定宽，当文本输入过多，文本显示会因为i标签的浮动而全部换行，要设置适当的max-width
 	
+	
 ## 在线预览：https://yittang.github.io/practice/JS仿手机聊天/index.html
+
+### ![picture](images/3.png)
