@@ -46,6 +46,7 @@
 
 .content .input img {
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .content .input #oText {
